@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/enemy_big.png</File>
+    <File>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/enemy_medium.png</File>
+    <File>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/enemy_small.png</File>
+    <File>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/player.png</File>
+    <File>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/shot.png</File>
+  </SourceFiles>
+</SourceFileCollection>

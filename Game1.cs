@@ -12,10 +12,14 @@ namespace SpaceSmash
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Player player;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            player = new Player(new Vector2(50, 50), new Vector2(10, 10));
         }
 
         /// <summary>
@@ -40,6 +44,12 @@ namespace SpaceSmash
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            AttackData tmp;
+            tmp.attackRate = 2;
+            tmp.projectileSpeed = 10;
+            tmp.attackTexture = Content.Load<Texture2D>("shot");
+
+            player.Init(this.Content.Load<Texture2D>("player"), tmp);
             // TODO: use this.Content to load your game content here
         }
 
@@ -62,7 +72,18 @@ namespace SpaceSmash
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+
+
+
             // TODO: Add your update logic here
+
+
+
+            player.Update(gameTime);
+
+
+
+
 
             base.Update(gameTime);
         }
@@ -73,11 +94,19 @@ namespace SpaceSmash
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin();
 
-            // TODO: Add your drawing code here
+            GraphicsDevice.Clear(Color.White);
 
+            //System.Diagnostics.Debug.WriteLine("X: " + GraphicsDevice.Viewport.Bounds.X + "   Y: " + GraphicsDevice.Viewport.Bounds.Y);
+            
+
+            player.Draw(gameTime, spriteBatch);
+
+
+            // TODO: Add your drawing code 
             base.Draw(gameTime);
+            spriteBatch.End();
         }
     }
 }
