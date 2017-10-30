@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/shot.png</SourceFile>
-  <SourceTime>2017-10-28T01:46:52.1174732+02:00</SourceTime>
+  <SourceTime>2017-10-28T02:29:54.1600095+02:00</SourceTime>
   <DestFile>C:/Users/karl.enfors/source/repos/SpaceSmash/SpaceSmash/Content/bin/Windows/shot.xnb</DestFile>
-  <DestTime>2017-10-28T01:48:42.8166304+02:00</DestTime>
+  <DestTime>2017-10-28T02:31:03.3972515+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

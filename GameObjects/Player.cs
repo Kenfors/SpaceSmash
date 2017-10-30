@@ -51,6 +51,10 @@ namespace SpaceSmash
             {
 
                 projectiles.Add(new Projectile(attack.attackTexture, attack.projectileSpeed, unitdata.Pos, new Vector2(0, 1f)));
+                Vector2 tmpvector = unitdata.Pos;
+                tmpvector.X += 50;
+                projectiles.Add(new Projectile(attack.attackTexture, attack.projectileSpeed, tmpvector, new Vector2(0, 1f)));
+
                 attackCD = attack.attackRate * 50;
 
             }
